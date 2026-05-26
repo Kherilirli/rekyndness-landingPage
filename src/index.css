@@ -1,0 +1,26 @@
+/* Reset bawaan Vite dihapus — styling ditangani Tailwind CDN */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  cursor: none;
+  overflow-x: hidden;
+}
+
+/* Scroll reveal — dipakai oleh IntersectionObserver di App.jsx */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
